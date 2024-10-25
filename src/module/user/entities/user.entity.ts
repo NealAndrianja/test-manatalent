@@ -32,8 +32,4 @@ export class User {
 
   @Column({ type: 'timestamp' })
   createdAt: Date;
-
-  @ManyToMany(() => EntityEntity, (entity) => entity.id)
-  @JoinTable()
-  entities: EntityEntity[];
 }
